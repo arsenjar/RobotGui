@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Главный контейнер */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.q2 button {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+/* Верхняя панель (меню) */
+.Header {
+  height: 60px;
+  background: #111;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+
+
+  font-size: 20px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.stream {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Сетка */
+.grid {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 5px;
+  background: black;
+}
+
+.q1 {
+  background: rgb(88, 86, 86);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.q2 {
+  background: white;
+}
+
+.q3 {
+  background: rgb(88, 86, 86);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.q4 {
+  background: white;
+    min-height: 0;
+  overflow: hidden;
+}
+
+.terminal {
+  background: #0d0d0d;
+  color: #00ff41;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #0d0d0d;
+}
+
+.terminal div {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

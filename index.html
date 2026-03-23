@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Hello World Page Title</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="Header">
+        Robot Control Center Scrummanders
+    </div>
+    <div class="grid">
+      <div class="q1">
+        <div class = "overlay">Connecting ....</div>
+        <img src="http://192.168.1.73:8080/video_feed" class="stream">
+      </div>
+      <div class="q2">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; gap:8px; background:#111;">
+        <button onclick="log('FWD')">▲</button>
+        <div style="display:flex; gap:8px;">
+          <button onclick="log('LFT')">◀</button>
+          <button id="toggle-btn" style="background:green;">▶ STR</button>
+          <button onclick="log('RGT')">▶</button>
+        </div>
+        <button onclick="log('BCK')">▼</button>
+      </div>
+    </div>
+      <div class="q3">
+        <div class = "overlay">Connecting ....</div>
+         <img src="http://192.168.1.73:8080/video_feed" class="stream">
+      </div>
+      <div class="q4">
+        <div class="terminal" id="console-quadrant">
+            <pre id = "console-log"></pre>
+         </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
